@@ -5,8 +5,8 @@ import { loadStripe } from "@stripe/stripe-js";
 
 export default function StripePaymentForm() {
   const stripePromise = loadStripe(
-    process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY ||
-      "pk_live_51RfBmtKIZuSQ9lSpacGJYGAaUZKPRI5F6Jiq0rOrPXtU9NmvbdC498mu4hKjMbNHNJwTH4ftUezOiQysEKrCoBHc00aPpxegD0"
+    process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY 
+      
   );
   return (
     <div>
